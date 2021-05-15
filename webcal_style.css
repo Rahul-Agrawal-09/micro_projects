@@ -1,0 +1,40 @@
+.title{
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: yellowgreen solid 2px;
+    width: fit-content;
+    padding: 10px;
+    flex-direction: column;
+    transition: 0.3s ;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    transition: 0.3s ;
+}
+
+.col{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 2em;
+    height: 2em;
+    margin: 5px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #ff9900 60%, #ffb84e);
+    box-shadow: 5px 10px 5px rgba(255, 153, 0, 0.60);
+}
+
+.col:active{
+    transform: translate(7px,5px);
+    transition-duration: 50ms;
+    box-shadow: 1px 2px 5px rgba(255, 153, 0, 0.9);
+}
