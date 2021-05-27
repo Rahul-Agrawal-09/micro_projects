@@ -2,6 +2,12 @@
     text-align: center;
 }
 
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .container{
     margin: auto;
     display: flex;
@@ -17,16 +23,18 @@
     display: flex;
     justify-content: center;
     transition: 0.3s ;
+    flex-direction: row;
 }
 
 .col{
-    font-size: 36px;
+    flex-direction: column;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     width: 2em;
-    height: 2em;
+    height: 1.5em;
     margin: 5px;
     border-radius: 10px;
     background-image: linear-gradient(to bottom right, #ff9900 60%, #ffb84e);
@@ -37,4 +45,15 @@
     transform: translate(7px,5px);
     transition-duration: 50ms;
     box-shadow: 1px 2px 5px rgba(255, 153, 0, 0.9);
+}
+
+.display{
+    font-size: 48px;
+    border: 2px solid grey;
+    justify-content: flex-end;
+    border-radius: 5px;
+}
+
+.col:hover, .col:active{
+    cursor: pointer;
 }
